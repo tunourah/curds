@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <!-- <meta name="viewport" content="width= initial-scale=1.0"> -->
     <title>CURDS</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -23,11 +22,11 @@
           <input placeholder="title" type="text" id="title">
 
           <div class="price">
-            <input placeholder="price" type="number" id="price">
-            <input placeholder="taxes" type="number" id="taxes">
-            <input placeholder="ads" type="number" id="ads">
-            <input placeholder="discount" type="number" id="discount">
-            <small id="total">286345</small>
+            <input onkeyup="getTotalPrice()" placeholder="price" type="number" id="price">
+            <input  onkeyup="getTotalPrice()" placeholder="taxes" type="number" id="taxes">
+            <input onkeyup="getTotalPrice()" placeholder="ads" type="number" id="ads">
+            <input onkeyup="getTotalPrice()" placeholder="discount" type="number" id="discount">
+            <small id="total"></small>
           </div>
 
           <input placeholder="count" type="number" id="count">
@@ -91,7 +90,7 @@
     <td>1</td>
     <td>i phone</td>
     <td>i phone</td>
-    <td>i phone</td>
+    <td>i phone</td>  
     <td>i phone</td>
     <td>i phone</td>
     <td>i phone</td>
@@ -115,5 +114,6 @@
 
 
    </div> 
+   <script src="main.js"></script>
 </body>
 </html>
