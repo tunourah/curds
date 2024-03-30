@@ -45,12 +45,21 @@ submit.onclick = function () {
   };
   dataPro.push(newPro);
   localStorage.setItem('product' , JSON.stringify(dataPro));
-
-  console.log(dataPro);
+  clearInputs()
+  
 };
 
 // save local storge
 // clear inputs
+
+function clearInputs() {
+    let allInpts = document.querySelectorAll("input");
+    allInpts.forEach((input) => {
+      input.value = "";
+    });
+    total.innerHTML = "";
+  }
+ 
 // read
 // count
 //delete
